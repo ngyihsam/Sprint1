@@ -56,9 +56,7 @@ public class Affiliate {
     public String getEmail(){
         return email;
     }
-    
-    
-    
+
     @Override
     public String toString(){
         return (ownerName +", "+restaurantName+ ", " +contactNo+", " +ICNumber+", " +email+ "\n");
