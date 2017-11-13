@@ -35,35 +35,35 @@ public class AffiliateRegistration{
         Scanner scanner2 = new Scanner(System.in); 
         System.out.print("Please enter owner name: ");
         String ownerName = scanner2.nextLine();
-        while(!ownerName.matches("[A-Za-z ]+") || ownerName.equals(" ")){
+        while(!ownerName.matches("[A-Za-z ]+") || ownerName.trim().isEmpty()){
             System.out.print("Alphabets only!\nPlease enter owner name: ");
             ownerName = scanner2.nextLine();
         }
         scanner2.reset();
         System.out.print("Please enter your restaurant name: ");
         String restaurantName = scanner2.nextLine();
-        while(restaurantName.equals(" ")){
+        while(restaurantName.trim().isEmpty()){
             System.out.print("Please enter a correct restaurant name!\nPlease enter your restaurant name: ");
             restaurantName = scanner2.nextLine();
         }
         scanner2.reset();
         System.out.print("Please enter contact number: ");
         String contactNo = scanner2.nextLine();
-        while(!contactNo.matches("\\d{10,11}") || contactNo.equals(" ")){
+        while(!contactNo.matches("\\d{10,11}") || contactNo.trim().isEmpty()){
             System.out.print("10 or 11 digits only!\nPlease enter contact number: ");
             contactNo = scanner2.nextLine();
         }
         scanner2.reset();
         System.out.print("Please enter your IC number: ");
         String ICNumber = scanner2.nextLine();
-        while(!ICNumber.matches("\\d{12}") || ICNumber.equals(" ")){
+        while(!ICNumber.matches("\\d{12}") || ICNumber.trim().isEmpty()){
             System.out.print("12 Digits only!\nPlease enter your IC number: ");
             ICNumber = scanner2.nextLine();
         }
         scanner2.reset();
         System.out.print("Please enter your email address: ");
         String email = scanner2.nextLine();
-        while(!email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}") || email.equals(" ")){
+        while(!email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}") || email.trim().isEmpty()){
             System.out.print("Invalid format!\nPlease enter your email address: ");
             email = scanner2.nextLine();
         }
