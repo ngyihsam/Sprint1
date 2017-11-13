@@ -1,13 +1,13 @@
 package agile_assignment;
 
 
-public class Employee {
+public class Deliveryman {
 String deliveryman_name;
 String deliveryman_status;
 String deliveryman_code;
 
-public Employee(){}
-public Employee(String deliveryman_name, String deliveryman_status,String deliveryman_code){
+public Deliveryman(){}
+public Deliveryman(String deliveryman_name, String deliveryman_status,String deliveryman_code){
     this.deliveryman_name = deliveryman_name;
     this.deliveryman_status = deliveryman_status;
     this.deliveryman_code = deliveryman_code;
