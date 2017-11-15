@@ -1,6 +1,8 @@
 package AffiliateRegistration;
 
 public class Affiliate {
+    String category;
+    String registrationID;
     String ownerName;
     String restaurantName;
     String contactNo;
@@ -9,12 +11,30 @@ public class Affiliate {
     
     public Affiliate(){ }
     
-    public Affiliate(String ownerName, String restaurantName, String contactNo, String ICNumber, String email){
+    public Affiliate(String category, String registrationID, String ownerName, String restaurantName, String contactNo, String ICNumber, String email){
+        this.category = category;
+        this.registrationID = registrationID;
         this.ownerName = ownerName;
         this.restaurantName = restaurantName;
         this.contactNo = contactNo;
         this.ICNumber = ICNumber;
         this.email = email;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getRegistrationID() {
+        return registrationID;
+    }
+
+    public void setRegistrationID(String registrationID) {
+        this.registrationID = registrationID;
     }
     
     public void setOwnerName(String ownerName){
@@ -59,6 +79,6 @@ public class Affiliate {
 
     @Override
     public String toString(){
-        return (ownerName +", "+restaurantName+ ", " +contactNo+", " +ICNumber+", " +email+ "\n");
+        return (category+ ", "+ registrationID+", " +ownerName +", "+restaurantName+ ", " +contactNo+", " +ICNumber+", " +email+ "\n");
     }
 }
