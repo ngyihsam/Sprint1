@@ -69,10 +69,9 @@ public class Restaurant {
             String m="\nMenu\t(Price)\n========================\n";
         for(int i=0;i<menu[res].length;i++){
         m+=(i+1)+". "+menu[res][i]+"\t( "+price[res][i]+")\n";
-        
-        System.out.println(m);
-        System.out.print("Order >");
         }
+         System.out.println(m);
+        System.out.print("Order >");
          no=sc.nextInt();
          
          if(no>=1&&no<menu[res].length){
